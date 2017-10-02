@@ -1,5 +1,4 @@
-FROM node:alpine 
+FROM mhart/alpine-node 
 
 RUN apk add --no-cache git && \
-  npm install -g npm && \
-	npm install -g react-native exp
+	yarn global add react-native exp
